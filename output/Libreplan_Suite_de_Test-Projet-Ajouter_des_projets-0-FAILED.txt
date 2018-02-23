@@ -1,0 +1,63 @@
+Status: FAILED
+Time Taken: 185
+Size: 1022
+Timestamp: Fri Feb 23 15:53:04 CET 2018
+TestStep: Ajouter des projets
+
+----------------- Messages ------------------------------
+[Valid HTTP Status Codes] Response status code:404 is not in acceptable list of status codes
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: http://localhost:8085
+Username: wswriter
+Method: POST
+Domain: http://localhost:8085/libreplan/common/layout/login.zul
+StatusCode: 404
+URL: http://localhost:8085/libreplan/ws/rest/orderelements/
+Password: wswriter
+
+---------------- Request ---------------------------
+Authorization: [Basic d3N3cml0ZXI6d3N3cml0ZXI=]
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Host: [localhost:8085]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [652]
+Content-Type: [application/xml]
+
+POST http://localhost:8085/libreplan/ws/rest/orderelements/ HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/xml
+Authorization: Basic d3N3cml0ZXI6d3N3cml0ZXI=
+Content-Length: 652
+Host: localhost:8085
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+<?xml version="1.0" encoding="utf-8"?>
+<order-list xmlns="http://rest.ws.libreplan.org">
+   <order calendar-name="Default" dependencies-constraints-have-priority="false" init-date="2017-05-18" name="Coucou2" code="ORDER0032">
+      <labels/>
+      <material-assignments/>
+      <advance-measurements/>
+      <criterion-requirements/>
+      <children/>
+   </order>
+    <order calendar-name="Default" dependencies-constraints-have-priority="false" init-date="2017-05-17" name="Coucou" code="ORDER0031">
+      <labels/>
+      <material-assignments/>
+      <advance-measurements/>
+      <criterion-requirements/>
+      <children/>
+   </order>
+</order-list>
+
+---------------- Response --------------------------
+#status#: [HTTP/1.1 404 ]
+Content-Length: [1022]
+Content-Language: [fr]
+Date: [Fri, 23 Feb 2018 14:53:04 GMT]
+Content-Type: [text/html;charset=utf-8]
+
+<!doctype html><html lang="fr"><head><title>État HTTP 404 – Not Found</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>État HTTP 404 – Not Found</h1><hr class="line" /><p><b>Type</b> Rapport d''état</p><p><b>message</b> /libreplan/ws/rest/orderelements/</p><p><b>description</b> La ressource demandée n''est pas disponible.</p><hr class="line" /><h3>Apache Tomcat/8.5.12</h3></body></html>

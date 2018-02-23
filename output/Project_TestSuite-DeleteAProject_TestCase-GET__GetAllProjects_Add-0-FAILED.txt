@@ -1,0 +1,44 @@
+Status: FAILED
+Time Taken: 3
+Size: 1021
+Timestamp: Fri Feb 23 16:06:29 CET 2018
+TestStep: GET - GetAllProjects Add
+
+----------------- Messages ------------------------------
+[Contains Code] Missing token [ORDER0007] in Response
+[XPath Match] XPathContains comparison failed for path [declare namespace ns1='http://rest.ws.libreplan.org';
+count(//ns1:order)], expecting [6], actual was [0]
+[Contains Name] Missing token [Test_Project_DEL] in Response
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: http://localhost:8085
+Username: wsreader
+Method: GET
+StatusCode: 404
+URL: http://localhost:8085/libreplan/ws/rest/orderelements
+Password: wsreader
+
+---------------- Request ---------------------------
+Authorization: [Basic d3NyZWFkZXI6d3NyZWFkZXI=]
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Host: [localhost:8085]
+Accept-Encoding: [gzip,deflate]
+
+GET http://localhost:8085/libreplan/ws/rest/orderelements HTTP/1.1
+Accept-Encoding: gzip,deflate
+Authorization: Basic d3NyZWFkZXI6d3NyZWFkZXI=
+Host: localhost:8085
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+---------------- Response --------------------------
+#status#: [HTTP/1.1 404 ]
+Content-Length: [1021]
+Content-Language: [fr]
+Date: [Fri, 23 Feb 2018 15:06:29 GMT]
+Content-Type: [text/html;charset=utf-8]
+
+<!doctype html><html lang="fr"><head><title>État HTTP 404 – Not Found</title><style type="text/css">h1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} h2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} h3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} body {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} b {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} p {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;} a {color:black;} a.name {color:black;} .line {height:1px;background-color:#525D76;border:none;}</style></head><body><h1>État HTTP 404 – Not Found</h1><hr class="line" /><p><b>Type</b> Rapport d''état</p><p><b>message</b> /libreplan/ws/rest/orderelements</p><p><b>description</b> La ressource demandée n''est pas disponible.</p><hr class="line" /><h3>Apache Tomcat/8.5.12</h3></body></html>
